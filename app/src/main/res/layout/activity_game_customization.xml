@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="4"
+    android:rowCount="4"
+    tools:context=".GameCustomizationActivity">
+
+    <ImageView
+        android:id="@+id/player1VesselChoice"
+        android:src="@drawable/wave"
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_columnSpan="1"
+        android:scaleType="fitCenter"
+        />
+
+    <Space
+        android:id="@+id/space"
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        />
+
+
+    <ImageView
+        android:id="@+id/player2VesselChoice"
+        android:src="@drawable/wave"
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:layout_columnSpan="1"
+        android:scaleType="fitCenter"
+        />
+
+    <TextView
+        android:id="@+id/playerTurn"
+        android:text="Player 1's Turn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_rowWeight="1"
+        />
+
+    <ImageButton
+        android:id="@+id/shipChoice1"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        />
+    <ImageButton
+        android:id="@+id/shipChoice2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        />
+    <ImageButton
+        android:id="@+id/shipChoice3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        />
+    <ImageButton
+        android:id="@+id/shipChoice4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        />
+    <ImageButton
+        android:id="@+id/shipChoice5"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        />
+    <ImageButton
+        android:id="@+id/shipChoice6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        />
+    <ImageButton
+        android:id="@+id/shipChoice7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        />
+
+    <Button
+        android:id="@+id/confirmSelectionButton"
+        android:text="Confirm"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_rowWeight=".25"
+        android:layout_columnWeight="1"
+        android:layout_columnSpan="4"
+        />
+    <Button
+        android:id="@+id/quitSelectionButton"
+        android:text="Quit"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_rowWeight=".25"
+        android:layout_columnWeight="1"
+        android:layout_columnSpan="4"
+        />
+
+</GridLayout>
