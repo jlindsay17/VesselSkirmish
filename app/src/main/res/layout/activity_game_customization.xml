@@ -10,37 +10,31 @@
 
     <ImageView
         android:id="@+id/player1VesselChoice"
-        android:src="@drawable/wave"
+        android:src="@drawable/user"
         android:layout_height="0dp"
         android:layout_width="0dp"
         android:layout_rowWeight="1"
         android:layout_columnWeight="1"
         android:layout_columnSpan="1"
         android:scaleType="fitCenter"
+        android:clickable="false"
         />
 
-    <Space
+    <TextView
         android:id="@+id/space"
         android:layout_height="0dp"
         android:layout_width="0dp"
         android:layout_rowWeight="1"
         android:layout_columnWeight="1"
-        />
-
-
-    <ImageView
-        android:id="@+id/player2VesselChoice"
-        android:src="@drawable/wave"
-        android:layout_height="0dp"
-        android:layout_width="0dp"
-        android:layout_rowWeight="1"
-        android:layout_columnWeight="1"
-        android:layout_columnSpan="1"
-        android:scaleType="fitCenter"
+        android:layout_columnSpan="2"
+        android:text="Select Which Vessel You Would Like to Commandeer for This Battle"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
         />
 
     <TextView
-        android:id="@+id/playerTurn"
+        android:id="@+id/ignore"
         android:text="Player 1's Turn"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -53,6 +47,10 @@
         android:layout_height="0dp"
         android:layout_rowWeight="1"
         android:layout_columnWeight="1"
+        android:src="@drawable/battleship"
+        android:scaleType="fitCenter"
+        android:padding="5dp"
+        android:clickable="true"
         />
     <ImageButton
         android:id="@+id/shipChoice2"
@@ -60,6 +58,10 @@
         android:layout_height="0dp"
         android:layout_rowWeight="1"
         android:layout_columnWeight="1"
+        android:src="@drawable/pirateship"
+        android:scaleType="fitCenter"
+        android:padding="5dp"
+        android:clickable="true"
         />
     <ImageButton
         android:id="@+id/shipChoice3"
@@ -67,6 +69,10 @@
         android:layout_height="0dp"
         android:layout_rowWeight="1"
         android:layout_columnWeight="1"
+        android:src="@drawable/vikingship"
+        android:scaleType="fitCenter"
+        android:padding="5dp"
+        android:clickable="true"
         />
     <ImageButton
         android:id="@+id/shipChoice4"
@@ -74,6 +80,7 @@
         android:layout_height="0dp"
         android:layout_rowWeight="1"
         android:layout_columnWeight="1"
+        android:clickable="false"
         />
     <ImageButton
         android:id="@+id/shipChoice5"
@@ -81,6 +88,10 @@
         android:layout_height="0dp"
         android:layout_rowWeight="1"
         android:layout_columnWeight="1"
+        android:src="@drawable/submarine"
+        android:scaleType="fitCenter"
+        android:padding="5dp"
+        android:clickable="true"
         />
     <ImageButton
         android:id="@+id/shipChoice6"
@@ -88,6 +99,10 @@
         android:layout_height="0dp"
         android:layout_rowWeight="1"
         android:layout_columnWeight="1"
+        android:src="@drawable/spaceship"
+        android:scaleType="fitCenter"
+        android:padding="5dp"
+        android:clickable="true"
         />
     <ImageButton
         android:id="@+id/shipChoice7"
@@ -95,6 +110,10 @@
         android:layout_height="0dp"
         android:layout_rowWeight="1"
         android:layout_columnWeight="1"
+        android:src="@drawable/ufo"
+        android:scaleType="fitCenter"
+        android:padding="5dp"
+        android:clickable="true"
         />
 
     <Button
