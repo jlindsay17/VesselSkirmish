@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:columnCount="7"
+    android:columnCount="8"
     android:rowCount="9"
     tools:context=".GamePlayActivity">
 
@@ -12,7 +12,7 @@
         android:text="Time to Skirmish!"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_columnSpan="7"
+        android:layout_columnSpan="8"
         android:layout_rowWeight=".5"
         android:layout_columnWeight="1"
         android:textAlignment="center"
@@ -76,6 +76,15 @@
         />
     <ImageButton
         android:id="@+id/t06"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/wave"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:scaleType="fitCenter"
+        />
+    <ImageButton
+        android:id="@+id/t07"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:src="@drawable/wave"
@@ -147,6 +156,15 @@
         android:layout_columnWeight="1"
         android:scaleType="fitCenter"
         />
+    <ImageButton
+        android:id="@+id/t17"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/wave"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:scaleType="fitCenter"
+        />
 
     <ImageButton
         android:id="@+id/t20"
@@ -204,6 +222,15 @@
         />
     <ImageButton
         android:id="@+id/t26"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/wave"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:scaleType="fitCenter"
+        />
+    <ImageButton
+        android:id="@+id/t27"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:src="@drawable/wave"
@@ -276,6 +303,15 @@
         android:layout_columnWeight="1"
         android:scaleType="fitCenter"
         />
+    <ImageButton
+        android:id="@+id/t37"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/wave"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:scaleType="fitCenter"
+        />
 
     <ImageButton
         android:id="@+id/t40"
@@ -333,6 +369,15 @@
         />
     <ImageButton
         android:id="@+id/t46"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/wave"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:scaleType="fitCenter"
+        />
+    <ImageButton
+        android:id="@+id/t47"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:src="@drawable/wave"
@@ -404,6 +449,15 @@
         android:layout_columnWeight="1"
         android:scaleType="fitCenter"
         />
+    <ImageButton
+        android:id="@+id/t57"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/wave"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:scaleType="fitCenter"
+        />
 
     <ImageButton
         android:id="@+id/t60"
@@ -468,6 +522,88 @@
         android:layout_columnWeight="1"
         android:scaleType="fitCenter"
         />
+    <ImageButton
+        android:id="@+id/t67"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/wave"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:scaleType="fitCenter"
+        />
+
+    <ImageButton
+        android:id="@+id/t70"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/wave"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:scaleType="fitCenter"
+        />
+    <ImageButton
+        android:id="@+id/t71"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/wave"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:scaleType="fitCenter"
+        />
+    <ImageButton
+        android:id="@+id/t72"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/wave"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:scaleType="fitCenter"
+        />
+    <ImageButton
+        android:id="@+id/t73"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/wave"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:scaleType="fitCenter"
+        />
+    <ImageButton
+        android:id="@+id/t74"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/wave"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:scaleType="fitCenter"
+        />
+    <ImageButton
+        android:id="@+id/t75"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/wave"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:scaleType="fitCenter"
+        />
+    <ImageButton
+        android:id="@+id/t76"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/wave"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:scaleType="fitCenter"
+        />
+    <ImageButton
+        android:id="@+id/t77"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:src="@drawable/wave"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:scaleType="fitCenter"
+        />
 
     <Button
         android:id="@+id/quitButton"
@@ -476,7 +612,7 @@
         android:layout_height="0dp"
         android:layout_rowWeight=".5"
         android:layout_columnWeight="1"
-        android:layout_columnSpan="7"
+        android:layout_columnSpan="8"
         />
 
 </GridLayout>
