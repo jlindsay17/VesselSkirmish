@@ -28,6 +28,7 @@
         android:layout_rowWeight="1"
         android:layout_columnWeight="1"
         android:scaleType="fitCenter"
+        android:onClick="onClick"
         />
     <ImageButton
         android:id="@+id/t01"
@@ -37,6 +38,7 @@
         android:layout_rowWeight="1"
         android:layout_columnWeight="1"
         android:scaleType="fitCenter"
+        android:onClick="onClick"
         />
     <ImageButton
         android:id="@+id/t02"
@@ -46,6 +48,7 @@
         android:layout_rowWeight="1"
         android:layout_columnWeight="1"
         android:scaleType="fitCenter"
+        android:onClick="onClick"
         />
     <ImageButton
         android:id="@+id/t03"
@@ -55,6 +58,7 @@
         android:layout_rowWeight="1"
         android:layout_columnWeight="1"
         android:scaleType="fitCenter"
+        android:onClick="onClick"
         />
     <ImageButton
         android:id="@+id/t04"
@@ -64,6 +68,7 @@
         android:layout_rowWeight="1"
         android:layout_columnWeight="1"
         android:scaleType="fitCenter"
+        android:onClick="onClick"
         />
     <ImageButton
         android:id="@+id/t05"
@@ -73,6 +78,7 @@
         android:layout_rowWeight="1"
         android:layout_columnWeight="1"
         android:scaleType="fitCenter"
+        android:onClick="onClick"
         />
     <ImageButton
         android:id="@+id/t06"
@@ -82,6 +88,7 @@
         android:layout_rowWeight="1"
         android:layout_columnWeight="1"
         android:scaleType="fitCenter"
+        android:onClick="onClick"
         />
     <ImageButton
         android:id="@+id/t07"
@@ -91,6 +98,7 @@
         android:layout_rowWeight="1"
         android:layout_columnWeight="1"
         android:scaleType="fitCenter"
+        android:onClick="onClick"
         />
 
     <ImageButton
@@ -610,7 +618,7 @@
         android:text="Quit"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_rowWeight=".5"
+        android:layout_rowWeight=".55"
         android:layout_columnWeight="1"
         android:layout_columnSpan="8"
         />

@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class GamePlayActivity extends AppCompatActivity {
     static final String TAG = "TestTAG";
@@ -33,5 +34,37 @@ public class GamePlayActivity extends AppCompatActivity {
                 GamePlayActivity.this.finish();
             }
         });
+
+
+    }
+
+    public void onClick(View view){
+        switch (view.getId()){
+            case R.id.t00:
+                Toast.makeText(this, "Button 00", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.t01:
+                Toast.makeText(this, "Button 01", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.t02:
+                Toast.makeText(this, "Button 02", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.t03:
+                Toast.makeText(this, "Button 03", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.t04:
+                Toast.makeText(this, "04", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.t05:
+                Toast.makeText(this, "05", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.t06:
+                Toast.makeText(this, "06", Toast.LENGTH_SHORT).show();
+                break;
+            case R.id.t07:
+                Toast.makeText(this, "07", Toast.LENGTH_SHORT).show();
+                break;
+
+        }
     }
 }

@@ -8,6 +8,8 @@
 package com.example.vesselskirmish;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
+import androidx.core.content.res.ResourcesCompat;
 
 import android.app.ActivityOptions;
 import android.content.Intent;
@@ -17,6 +19,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 public class GameCustomizationActivity extends AppCompatActivity {
 
@@ -87,8 +90,9 @@ public class GameCustomizationActivity extends AppCompatActivity {
         });
         //**************************************************************************
 
+        //THIS DONT WORK
         final int choice;
-        if (playerChoice.getDrawable() == getResources().getDrawable(R.drawable.battleship)){
+        if (playerChoice.getDrawable() == ResourcesCompat.getDrawable(getResources(), R.drawable.battleship, null)){
             choice = 1;
         }
         else if (playerChoice.getDrawable() == getResources().getDrawable(R.drawable.pirateship)){
@@ -114,8 +118,14 @@ public class GameCustomizationActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(GameCustomizationActivity.this, GamePlayActivity.class);
                 intent.putExtra("choice", choice);
-                ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation(GameCustomizationActivity.this);
-                startActivity(intent, options.toBundle());
+                //THIS DONT WORK
+                if (playerChoice.getDrawable() != ContextCompat.getDrawable(GameCustomizationActivity.this, R.drawable.user)){
+                    ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation(GameCustomizationActivity.this);
+                    startActivity(intent, options.toBundle());
+                }
+                else{
+                    Toast.makeText(GameCustomizationActivity.this, "Please select a ship type", Toast.LENGTH_SHORT).show();
+                }
             }
         });
 

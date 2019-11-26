@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1078230552542",
+    "firebase_url": "https://vesselskirmish.firebaseio.com",
+    "project_id": "vesselskirmish",
+    "storage_bucket": "vesselskirmish.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1078230552542:android:73b32d55a21c2b6198574f",
+        "android_client_info": {
+          "package_name": "com.example.vesselskirmish"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1078230552542-mee5ao4ii71dq90g4g68b7hgd88ejghk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMEsw5-twsCDpkbE8e67IkbMPdYEP1wao"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1078230552542-mee5ao4ii71dq90g4g68b7hgd88ejghk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
