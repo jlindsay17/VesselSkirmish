@@ -15,6 +15,7 @@ import android.app.ActivityOptions;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -22,6 +23,7 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 public class GameCustomizationActivity extends AppCompatActivity {
+    static final String TAG = "GameCustomTAG";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,12 +33,15 @@ public class GameCustomizationActivity extends AppCompatActivity {
         Button confirmButton = (Button) findViewById(R.id.confirmSelectionButton);
         Button quitButton = (Button) findViewById(R.id.quitSelectionButton);
         final ImageView playerChoice = (ImageView)  findViewById(R.id.player1VesselChoice);
-        ImageButton shipChoice1 = (ImageButton) findViewById(R.id.shipChoice1);
-        ImageButton shipChoice2 = (ImageButton) findViewById(R.id.shipChoice2);
-        ImageButton shipChoice3 = (ImageButton) findViewById(R.id.shipChoice3);
-        ImageButton shipChoice4 = (ImageButton) findViewById(R.id.shipChoice5);
-        ImageButton shipChoice5 = (ImageButton) findViewById(R.id.shipChoice6);
-        ImageButton shipChoice6 = (ImageButton) findViewById(R.id.shipChoice7);
+
+        playerChoice.setImageResource(R.drawable.user);
+
+        final ImageButton shipChoice1 = (ImageButton) findViewById(R.id.shipChoice1);
+        final ImageButton shipChoice2 = (ImageButton) findViewById(R.id.shipChoice2);
+        final ImageButton shipChoice3 = (ImageButton) findViewById(R.id.shipChoice3);
+        final ImageButton shipChoice4 = (ImageButton) findViewById(R.id.shipChoice5);
+        final ImageButton shipChoice5 = (ImageButton) findViewById(R.id.shipChoice6);
+        final ImageButton shipChoice6 = (ImageButton) findViewById(R.id.shipChoice7);
 
 
         //Listeners for Ship Options
@@ -92,19 +97,19 @@ public class GameCustomizationActivity extends AppCompatActivity {
 
         //THIS DONT WORK
         final int choice;
-        if (playerChoice.getDrawable() == ResourcesCompat.getDrawable(getResources(), R.drawable.battleship, null)){
+        if (playerChoice.getDrawable() == shipChoice1.getDrawable()){
             choice = 1;
         }
-        else if (playerChoice.getDrawable() == getResources().getDrawable(R.drawable.pirateship)){
+        else if (playerChoice.getDrawable() == shipChoice2.getDrawable()){
             choice = 2;
         }
-        else if (playerChoice.getDrawable() == getResources().getDrawable(R.drawable.vikingship)){
+        else if (playerChoice.getDrawable() == shipChoice3.getDrawable()){
             choice = 3;
         }
-        else if (playerChoice.getDrawable() == getResources().getDrawable(R.drawable.submarine)){
+        else if (playerChoice.getDrawable() == shipChoice4.getDrawable()){
             choice = 4;
         }
-        else if (playerChoice.getDrawable() == getResources().getDrawable(R.drawable.spaceship)){
+        else if (playerChoice.getDrawable() == shipChoice5.getDrawable()){
             choice = 5;
         }
         else {
@@ -112,16 +117,25 @@ public class GameCustomizationActivity extends AppCompatActivity {
         }
 
 
-
+//This gahdamnsummabich needs to get its shit together real quick
         confirmButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(GameCustomizationActivity.this, GamePlayActivity.class);
-                intent.putExtra("choice", choice);
+                Log.d(TAG, "1");
                 //THIS DONT WORK
-                if (playerChoice.getDrawable() != ContextCompat.getDrawable(GameCustomizationActivity.this, R.drawable.user)){
-                    ActivityOptions options = ActivityOptions.makeSceneTransitionAnimation(GameCustomizationActivity.this);
-                    startActivity(intent, options.toBundle());
+                Drawable userChoiceDrawable = playerChoice.getDrawable();
+                Log.d(TAG, "2");
+                Drawable otherDrawable = getResources().getDrawable(R.drawable.user);
+                Log.d(TAG, "3");
+                if (playerChoice.getDrawable() == shipChoice1.getDrawable() || playerChoice.getDrawable() == shipChoice2.getDrawable()
+                || playerChoice.getDrawable() == shipChoice3.getDrawable() || playerChoice.getDrawable() == shipChoice4.getDrawable()
+                || playerChoice.getDrawable() == shipChoice5.getDrawable() || playerChoice.getDrawable() == shipChoice6.getDrawable()){
+                    Log.d(TAG, "4");
+                    Log.d(TAG, "onClick: Here in my if statement");
+                    Intent intent = new Intent(GameCustomizationActivity.this, ShipPlacement.class);
+                    intent.putExtra("choice", choice);
+                    startActivity(intent);
+                    Toast.makeText(GameCustomizationActivity.this, "Please select a ship type", Toast.LENGTH_SHORT).show();
                 }
                 else{
                     Toast.makeText(GameCustomizationActivity.this, "Please select a ship type", Toast.LENGTH_SHORT).show();
@@ -132,8 +146,10 @@ public class GameCustomizationActivity extends AppCompatActivity {
         quitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Log.d(TAG, "5");
                 Intent intent = new Intent();
                 GameCustomizationActivity.this.finish();
+                Log.d(TAG, "onClick: Quitting");
             }
         });
 
